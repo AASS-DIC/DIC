@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0; 
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    transition: 1.2s;
+    background: url('https://www.adamson.edu.ph/2018/img/poster.jpg'), linear-gradient(180deg, #0C69DF, #FF2400);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-size: cover;
+}
+
+::selection {
+  color: whitesmoke;
+  background: #0C69DF;
+}
+
+@font-face {
+    font-family: 'apex';
+    src: url('Apex Mk3-ExtraLight.otf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'apex2';
+    src: url('Apex Mk3-Medium.otf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'shrimp';
+    src: url('SHRIMP.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'zzz';
+    src: url('ZZYZX.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'creato1';
+    src: url('CreatoDisplay-Black.otf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'creato2';
+    src: url('CreatoDisplay-Regular.otf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'creato3';
+    src: url('CreatoDisplay-Light.otf');
+    font-weight: 100;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    background: transparent;
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+    padding: -20px 10px;
+    z-index: 100000;
+}
+
+nav a{
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 7px 50px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: creato1;
+    transition: 0.8;
+}
+
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.hover.active,.hover:hover{
+    background: whitesmoke;
+    transition: .5s;
+    color: #16161D;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+}
+
+@media screen and (max-width: 920px){
+    nav ul li{
+        line-height: 90%;
+        margin: 0 1px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav ul li{
+        margin: 0 1px;
+        display: flex;
+    }
+}
+
+@keyframes slide{
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position-x: 500vh;
+    }
+}
+
+h4{
+  margin: 5px 30px;
+  font-family: apex;
+  color: whitesmoke;
+  font-size: 15px;
+}
+  
+span{
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+hr{
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.comment-box{
+  width: 47%;
+  margin-top: 150px;
+  background: #16161D;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p{
+  margin: 0 30px 15px;
+  font-weight: 300;
+  color: #16161d;
+  word-wrap: break-word;
+  background: dodgerblue;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-family: creato2;
+}
+
+.reminder{
+    margin: 13px 11px;
+    font-weight: 300;
+    color: whitesmoke;
+    background: none;
+    font-size: 15px;
+    font-family: creato3;
+}
+  
+.header{
+  margin: 15px 20px;
+  font-size: 27px;
+  font-weight: 600;
+  font-family: shrimp;
+  color: whitesmoke;
+}  
+
+.header0{
+  margin: 15px 20px;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: creato1;
+  color: whitesmoke;
+} 
+
+form{
+  margin: 10px 10px 30px 10px;
+  ::-webkit-input-placeholder{
+    color: #CCC;
+    font-weight: 300;
+  }
+}
+  
+input[type="text"], textarea{
+  margin: 5px 10px;
+  outline: none;
+  background: #1b1b1b;
+  border: 0;
+  padding: 10px;
+  font-family: creato2;
+  color: whitesmoke;
+  transition: 0.5s;
+}
+      
+textarea{
+  resize: none;
+  width: 80%;
+}
+  
+input[type="text"]{
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+input[type="text"]:focus{
+  background: #ccc;
+  color: #16161d;
+}
+
+textarea:focus{
+  background: #ccc;
+  color: #16161d;
+}
+
+button{
+  font-weight: 400;
+  margin: 12px 0 0 10px;
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+  background: #0C69DF;
+  padding: 12px 20px 12px 20px;
+  text-decoration: none;
+  outline: none;
+  transition: all .2s ease;
+  font-family: 'apex';
+}
+  
+button:hover{
+  background: #084695;
+}
+  
+.footer p{
+  float: right
+  font-size: 13px;
+  margin-bottom: 10px;
+  background: #FFF;
+}
+
+#comments{
+    font-family: creato2;
+}
